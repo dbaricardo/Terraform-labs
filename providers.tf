@@ -9,4 +9,5 @@ terraform {
 
 provider "github" {
   # Configuration options
+  owner = "Ricardo Rosa"
 }
