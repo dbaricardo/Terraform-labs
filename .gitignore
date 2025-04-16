@@ -1,57 +1,8 @@
-# Local .terraform directories
-**/.terraform/*
-
-# .tfstate files (contêm informações sensíveis do estado)
+# Terraform files
+.terraform/
 *.tfstate
-*.tfstate.*
-
-# Crash log files
-crash.log
-crash.*.log
-
-# Exclude all .tfvars files (contêm dados sensíveis, como senhas e chaves privadas)
+*.tfstate.backup
 *.tfvars
-*.tfvars.json
 
-# Ignore override files (geralmente usados para configurações locais)
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
-
-# Ignore transient lock info files criados pelo Terraform
-.terraform.tfstate.lock.info
-.terraform.tfstate.lock.hcl
-
-# Ignore arquivos de saída do plano do Terraform
-*tfplan*
-
-# Ignore arquivos de configuração CLI do Terraform
-.terraformrc
-terraform.rc
-
-# Ignore arquivos de credenciais ou configurações sensíveis
-*.pem
-*.key
-*.crt
-*.env
-secrets.*
-credentials.*
-config.*
-
-# Ignore arquivos de log e debug
-*.log
-*.bak
-*.swp
-*.tmp
-*.backup
-
-# Ignore arquivos gerados por IDEs e editores
-.idea/
-.vscode/
-*.iml
-
-# Ignore arquivos de sistema
-.DS_Store
-Thumbs.db
-desktop.ini
+# Mas NÃO ignore o .terraform.lock.hcl
+!.terraform.lock.hcl
